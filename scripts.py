@@ -17,10 +17,7 @@ def download_datasets(dataset_name, path):
         dataset_name (str): The name of the dataset to download.
         path (str): The directory where the dataset will be saved.
     """
-    if not os.path.exists(path):
-        os.makedirs(path)
-
-    if os.path.exists(path):
+    if os.path.exists(path) and os.listdir(path):
         print(f"✅ Dataset {dataset_name} already exists at {path}. Skipping download.")
         return
 
