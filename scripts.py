@@ -1,7 +1,7 @@
 import os
 import kagglehub
 
-path = "./datasets"
+path = "./dataset"
 mnist_multi_digit_dataset = "daitoo/mnist-multi-digit-cache-gray-datasets"
 
 def download_datasets(dataset_name, path):

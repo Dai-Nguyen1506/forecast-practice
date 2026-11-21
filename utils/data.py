@@ -33,7 +33,7 @@ def decode_tokens(tokens):
     return float("".join(digits)) if digits else 0.0
 
 
-def load_data(csv_path="../datasets/labels.csv", npy_path="../datasets/images_gray.npy"):
+def load_data(csv_path="../datasets/labels.csv", npy_path="../dataset/images_gray.npy"):
     """Đọc dữ liệu từ .npy và chia cố định Train / Val / Test (70 / 15 / 15)."""
     labels = pd.read_csv(csv_path)["label"].values
     images = np.load(npy_path)
