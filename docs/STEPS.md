@@ -18,5 +18,5 @@ cp notebooks/Base_Model.ipynb notebooks/<Name>_Model.ipynb
 ```
 
 2. Để ý những phần đã note cần thay tên trong Notebook
-3. Phần `4. Train Model` thì thay các kiến trúc model khác nhau. Sau đó copy vào các hàm trong `models/<Name>Model.py` như của Đại. Sau này chỉ cần mở ra đổi chiếu
-4. Sau khi chạy hết file notebook, kết quả sẽ được lưu ra file csv trong `output/`. Sau chỉ cần mở lên đối chiếu
+3. Phần `4. Train Model` thì thay các kiến trúc model khác nhau, thay số epoch, batch size, cấu hình ctct. Sau đó copy vào các hàm trong `models/<Name>Model.py` như của Đại. Sau này chỉ cần mở ra đổi chiếu
+4. Sau khi chạy hết file notebook, kết quả sẽ được lưu ra file csv trong `output/`. Sau chỉ cần mở lên đối chiếu.
