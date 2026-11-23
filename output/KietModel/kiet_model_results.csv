@@ -1,0 +1,2 @@
+Model,Version,Sequence_Accuracy,MAE,RMSE,R2,NSE
+Kiet Model cnn_bidirectional_attention_gru,cnn_bidirectional_attention_gru,0.9933333333333333,11431.763333333334,658580.5962714137,0.9988324456440826,0.9988324456440826
