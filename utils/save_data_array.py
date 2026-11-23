@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from tensorflow import float32, cast
 from tensorflow.io import read_file
-from tensorflow.image import decode_image
+from tensorflow.image import decode_png
 
 IMG_H = 28
 IMG_W = 224
@@ -21,7 +21,7 @@ labels = []
 for i, image_name in enumerate(df["image"]):
     image_path = image_dir + image_name
     img = read_file(image_path)
-    img = decode_image(img, channels=1)  # (28, 224, 1)    
+    img = decode_png(img, channels=1)  # (28, 224, 1)    
     img_arr = cast(img, float32) / 255
     images.append(img_arr.numpy())
 images = np.stack(images, axis=0)       # (60K, 28, 224, 1)
